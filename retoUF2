@@ -1,0 +1,43 @@
+package retouf2_2;
+
+public class Start2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+int num = 2;
+int contador = 0;
+
+System.out.println("******Números Primos*****" + "\n" + "*************************" + "\n");
+
+System.out.println("Introduzca un número:");
+
+int primo = scan.nextInt();
+
+if(primo==0) {
+	System.out.println("El número NO es primo");
+} else {
+	while (primo<0) {
+		System.out.println("Introduzca por favor números positivos");
+		System.out.println("Introduzca un número:");
+		primo = scan.nextInt();
+		
+	}
+	
+	for (int i = primo; i> 0; i--) {
+		if(primo%i==0) {
+			contador++;		
+		}
+	}
+	
+	if (contador == 2 || contador == 1) {
+		System.out.println("El número es primo");	
+	} else {
+		System.out.println("El número no es primo");
+	}
+}
+		
+	}
+
+}
